@@ -2,6 +2,7 @@
 #!/bin/sh
 
 # Ask the user for enter commit message
+export LANG=C.UTF-8
 read -p 'Commit message: ' msg
 
 # If a command fails then the deploy stops

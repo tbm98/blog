@@ -7,7 +7,7 @@ useFaviconGenerator = true # https://www.favicon-generator.org/
 meta_image = ""
 themecolor = ""
 
-themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
+themeOptions = ["dark", "light","solarized"] #, "hacker","kimbie"]
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
@@ -26,7 +26,7 @@ showMobileMenuTerms = ["tags", "categories", "series"]
 # body
 enableBreadcrumb = true
 enablePhotoSwipe = true
-enableSearch = true
+enableSearch = false
 enableSearchHighlight = true
 enableGoToTop = true
 enableWhoami = true
@@ -90,8 +90,12 @@ fullContents = false
 
 # comment
 enableComment = true
-disqus_shortname = "tbm98"
+#disqus_shortname = "tbm98"
 commento = false
+
+[facebook]
+  enable = true
+  appid = 578828196061090
 
 [telegram]
   enable = false

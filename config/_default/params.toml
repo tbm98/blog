@@ -95,7 +95,7 @@ commento = false
 
 [facebook]
   enable = true
-  appid = 578828196061090
+  appid = ""
 
 [telegram]
   enable = false

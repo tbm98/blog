@@ -184,9 +184,6 @@ void main() {
         Provider<Logger>(create: (_) => ConsoleLogger()),
         StateNotifierProvider<MyStateNotifier, MyState>(
           create: (_) => MyStateNotifier(),
-          builder: (context, child) {
-            return child;
-          },
         ),
       ],
       child: MyApp(),
@@ -292,13 +289,9 @@ class MyHomePage extends StatelessWidget {
 ```dart
         StateNotifierProvider<MyStateNotifier, MyState>(
           create: (_) => MyStateNotifier(),
-          builder: (context, child) {
-            return child;
-          },
         )
 ```
 Cái này cũng tương tự như `ChangeNotifierProvider` nhưng khác ở chỗ là nó cung cấp cùng lúc cả `StateNotifier` và `State`.
-Có thể trong tương lai thì không cần khai báo hàm builder khi đặt trong MultiProvider nữa :3
 Ở phần `View` thì vẫn sử dụng `Selector`/`Consumer`/`context.watch` ... như bình thường để có thể lấy ra được `StateNotifier`/`State` và sử dụng bình thường.
 ## Kết luận:
 * Sử dụng `StateNotifier` sẽ làm cho phần quản lý trạng thái chỉ có chức năng là xử lý logic và cập nhật trạng thái tương ứng.
